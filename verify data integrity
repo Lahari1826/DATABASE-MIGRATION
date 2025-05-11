@@ -1,0 +1,5 @@
+mysql> -- Ensure no invalid foreign keys
+mysql> SELECT * FROM clients c
+    -> LEFT JOIN domains d ON c.domain_id = d.domain_id
+    -> WHERE d.domain_id IS NULL;
+Empty set (0.00 sec)
