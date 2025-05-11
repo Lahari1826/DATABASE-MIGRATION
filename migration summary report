@@ -1,0 +1,12 @@
+🔹 Source DB: MySQL
+🔹 Target DB: PostgreSQL
+🔹 Tables Migrated: clients, domains
+🔹 Method:
+   - Exported CSV from MySQL using OUTFILE
+   - Imported into PostgreSQL using \COPY
+🔹 Validation:
+   - Row counts matched
+   - Foreign key integrity preserved
+   - Manual JOIN check passed
+
+🔹 Status:  Data Migration Successful
